@@ -1,13 +1,28 @@
+@import url('https://fonts.googleapis.com/css?family=Barlow&display=swap');
+html{
+    font-family: 'Barlow', sans-serif;
+}
 body {
   margin:0px;
-  font-family: Arial, Helvetica, sans-serif;
-  background-image: url("images/branches-bright-colors-1459495.jpg");
+  font-family: 'Barlow', sans-serif;
+  background-image: url("images/trees_bg.jpg");
   background-size: 100%;
   background-attachment: fixed;
+}
+p{
+font-family: 'Barlow', sans-serif;
 }
 
 img{
   width: 100%
+}
+li{
+  font-family: 'Barlow', sans-serif;
+}
+.logo {
+  display: block;
+  text-align: center;
+  padding: 70px;
 }
 
 .anchor{
@@ -16,6 +31,7 @@ img{
 }
 
 .header{
+  font-family: 'Barlow', sans-serif;
   z-index:1;
   background-color: #4E7235;
   width:100%;
@@ -28,8 +44,14 @@ img{
   padding:10px;
   font-size: 1.25em;
 }
-
+.header img {
+  width: 30%;
+  height: auto;
+  display: block;
+  margin: auto;
+}
 .topnav {
+  font-family: 'Barlow', sans-serif;
   overflow: hidden;
   background-color: #4E7235;
   width: 100%;
@@ -39,6 +61,7 @@ img{
 }
 
 .topnav a {
+  font-family: 'Barlow', sans-serif;
   float: left;
   display: block;
   color: #f2f2f2;
@@ -74,7 +97,6 @@ img{
   margin:auto;
   position: fixed;
   top:100px;
-  max-height: 80%;
   z-index: 5;
   background-color: rgba(0,0,0,0.7);
 }
@@ -85,9 +107,7 @@ img{
 
 .zoom_img{
   grid-column: 3/5;
-  max-width:100%;
-  max-height:100%;
-  display: block;
+  width:100%;
   padding: 20px 0;
 }
 
@@ -171,9 +191,7 @@ img{
 }
 
 @media screen and (min-width: 601px) {
-  .header{
-    margin-top: 400px;
-  }
+
   .topnav{
     grid-template-columns: 20% 20% 20% 20% 20%;
     }
@@ -189,28 +207,13 @@ img{
   .gallery{
     grid-template-columns: 25% 25% 25% 25%;
   }
-  .zoom_view{
-    grid-template-columns: auto 10% 17.5% 17.5% 10% auto;
-  }
-  .zoom_img{
-    grid-column: 3/5;
-  }
-  .left_arrow{
-    grid-column: 2/3;
-  }
-  .right_arrow{
-    grid-column: 5/6;
-  }
-  .close{
-    grid-column: 6/7;
-  }
 }
 
 .content{
   width: auto;
   background-color: white;
   padding:50px;
-  margin:0px 20px;
+  margin:20px 20px;
 }
 
 video{
