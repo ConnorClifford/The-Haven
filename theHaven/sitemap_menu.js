@@ -28,3 +28,18 @@ function collapse(){
     });
   }
 }
+
+
+/*  function source(){
+    var left = document.getElementById("left");
+    var right = document.getElementById("right");
+    left.addEventListener("click", function(){
+      i--;
+    });
+    right.addEventListener("click", function(){
+      i++;
+    });
+    var img = document.getElementById("zoom_img")
+    var source = this.src;
+    img.src = source;
+  } */

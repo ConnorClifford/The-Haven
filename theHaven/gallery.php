@@ -6,46 +6,59 @@
       <meta name="keywords" content="animals, injured, orphaned, charity, baby animal, hurt, stranded, lost">
       <meta name="author" content="Web Design Workshop I group 3">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">    <title>The Haven - Home</title>
-    <title>The Haven - Store</title>
+    <title>The Haven - Photo Gallery</title>
     <link rel="stylesheet" href="resetStandard.css">
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
       <div class = "header">
-      <h1>The Haven - Store</h1>
+      <h1>The Haven - Photo Gallery</h1>
       <div class="topnav" id="myTopnav">
         <a href="#home" class="link">Home</a>
         <a href="hych.html" class ="link">How You Can Help</a>
         <a href="faa.html" class="link">Found an Animal?</a>
-        <a href="gallery.php" class="link">Photo Gallery</a>
-        <a href="store.html" class="active link">Store</a>
+        <a href="gallery.php" class="active link">Photo Gallery</a>
+        <a href="store.html" class="link">Store</a>
         <a href="javascript:void(0);" class="icon" onclick="mobileMenu()">
           <img src="images/menu.png" height="20px" width="20px"/>
         </a>
       </div>
     </div>
 
-    <div class="content">
-      <h1>The Haven Store</h1>
-      <div class="storeGrid">
-        <div class="storeItem">
-          <a name="shirts"></a>
-            <h3>The Haven T-Shirt</h3>
-            <p>Some sort of submittable form will go here. Transaction handled through Paypal.</p>
-        </div>
-        <div class="storeItem">
-          <a name="stickers"></a>
-            <h3>The Haven Sticker</h3>
-            <p>Some sort of submittable form will go here. Transaction handled through Paypal.</p>
-        </div>
-        <div class="storeItem">
-          <a name="membership"></a>
-            <h3>The Haven Membership</h3>
-            <p>Some sort of submittable form will go here. Transaction handled through Paypal.</p>
-        </div>
-      </div>
+    <div id="zoom_view" class="zoom_view">
+      <img src="images/left_arrow.png" class="left_arrow" id="left">
+      <img src="" class="zoom_img" id="zoom_img">
+      <img src="images/right_arrow.png" class="right_arrow" id="right">
+      <img src="images/close.png" class="close" id="close">
     </div>
 
+
+    <div class="content">
+      <div class="group">
+      <h1>Welcome to Our Photo Gallery</h1>
+        <p>Below are photos of some of our past and present wild friends as they make their
+           way back to their natural habitat.  Come back and visit often, as we update
+           this page with new photos regularly.</p>
+      </div>
+
+      <div id="gallery" class="gallery">
+        <?php
+          $all_files = glob("images/gallery/*.*");
+          //echo($all_files[0]);
+          for ($i=0; $i<count($all_files); $i++){
+            $image_name = $all_files[$i];
+            $supported_format = array('gif','jpg','jpeg','png');
+            $ext = strtolower(pathinfo($image_name, PATHINFO_EXTENSION));
+            if (in_array($ext, $supported_format)){
+                  echo '<img src="'.$image_name .'" class= "gallery_img" alt="'.$image_name.'" />';
+              }
+              else {
+                continue;
+               }
+            }
+         ?>
+      </div>
+    </div>
 
     <footer>
       <div class="footer_item left">
@@ -111,5 +124,6 @@
     </footer>
     <script src="sitemap_menu.js"></script>
     <script src="main.js"></script>
+    <script src="gallery.js"></script>
   </body>
 </html>
