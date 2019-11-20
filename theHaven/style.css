@@ -130,8 +130,21 @@ li{
   width:50px;
   padding:10px;
 }
+.row {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
 
 @media screen and (max-width: 600px) {
+  .row {
+      grid-template-columns: auto ;
+    }
+    .flip-box{
+    width: 100% !important;
+    margin:0px !important;
+    margin-bottom: 50px !important;
+  margin-right: 20px !important;
+    }
   .header{
     height:50px;
   }
@@ -275,12 +288,77 @@ footer{
 .navlinks_item a{
   color:white;
 }
+.flip-box {
+  background-color: transparent;
+  display: grid;
+  grid-template-columns: auto;
+  width: 500px;
+  height: 200px;
+  border: none;
+  perspective: 1000px;
+  margin: 50px;
+}
 
+.flip-box-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  padding-top: 20px;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
 
-@media screen and (min-width: 601px){
+.flip-box:hover .flip-box-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-box-front,
+.flip-box-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.flip-box-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-box-back {
+  background-color: #bbb;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+.center {
+  height: 200px;
+  position: relative;
+  border: none;
+}
+
+.center p {
+  margin: 0;
+  position: absolute;
+  top: 20%;
+  left: 20%;
+  -ms-transform: translate(-10%, -10%);
+  transform: translate(-10%, -10%);
+}
+
+.row {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+@media screen and (max-width: 601px){
   footer{
       text-align: left;
       grid-template-columns: 50% auto;
+  }
+  .row {
+    grid-template-columns: auto;
   }
   button{
     display:block;
