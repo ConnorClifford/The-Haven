@@ -35,10 +35,11 @@
 
     <div class="content">
       <div class="group">
-      <h1>Welcome to Our Photo Gallery</h1>
-        <p>Below are photos of some of our past and present wild friends as they make their
-           way back to their natural habitat.  Come back and visit often, as we update
-           this page with new photos regularly.</p>
+      <h1><center>Welcome to Our Photo Gallery</center></h1>
+        <p><center><b>Below are photos of some of our past and present wild friends as they make their
+           way back to their natural habitat.</b></center>
+           <center><b>Come back and visit often, as we update
+           this page with new photos regularly.</b></center></p>
       </div>
 
       <div id="gallery" class="gallery">
@@ -102,7 +103,7 @@
               <a href = "faa.html#babies">Baby Animals</a>            </div>
           </div>
         <div class="navlinks_item">
-          <button type="button" class="collapsible"><a href="gallery.html">Photo Gallery</a></button>
+          <button type="button" class="collapsible"><a href="gallery.php">Photo Gallery</a></button>
           </div>
         <div class="navlinks_item">
           <button type="button" class="collapsible"><a href="store.html">Store</a><p class=
