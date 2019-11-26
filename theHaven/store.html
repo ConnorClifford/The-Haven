@@ -30,18 +30,66 @@
       <div class="storeGrid">
         <div class="storeItem">
           <a name="shirts"></a>
+          <img src="images/shirt.jpg" alt="t-shirt">
+          <div>
             <h3>The Haven T-Shirt</h3>
-            <p>Some sort of submittable form will go here. Transaction handled through Paypal.</p>
+            <form action="https://www.paypal.com/webapps/shoppingcart?flowlogging_id=5b34e7a28c306&mfid=1574729713217_5b34e7a28c306#/checkout/openButton" target="_blank">
+              Color:<br>
+              <input list="colors" name="colors">
+                <datalist id="colors">
+                  <option value="teal">
+                  <option value="black">
+                  <option value="grey">
+                  <option value="green">
+                </datalist>
+                <br>
+              Size:<br>
+              <input list="sizes" name="sizes">
+                <datalist id="sizes">
+                  <option value="XS">
+                  <option value="S">
+                  <option value="M">
+                  <option value="L">
+                  <option value="XL">
+                </datalist>
+                <br><br>
+              <button type="submit" value="Submit">Buy Now!</button>
+            </form>
+          </div>
         </div>
         <div class="storeItem">
           <a name="stickers"></a>
+          <img src="images/sticker.jpg" alt="sticker">
+          <div>
             <h3>The Haven Sticker</h3>
-            <p>Some sort of submittable form will go here. Transaction handled through Paypal.</p>
+            <form action="https://www.paypal.com/webapps/shoppingcart?flowlogging_id=5b34e7a28c306&mfid=1574729713217_5b34e7a28c306#/checkout/openButton" target="_blank">
+              Size:<br>
+              <input list="stickerSizes" name="stickerSizes">
+                <datalist id="stickerSizes">
+                  <option value='4"'>
+                  <option value='6"'>
+                  <option value='8"'>
+                </datalist>
+                <br><br>
+              <button type="submit" value="Submit">Buy Now!</button>
+            </form>
+          </div>
         </div>
         <div class="storeItem">
           <a name="membership"></a>
+          <img src="images/membership.jpg" alt="membership">
+          <div>
             <h3>The Haven Membership</h3>
-            <p>Some sort of submittable form will go here. Transaction handled through Paypal.</p>
+            <form action="https://www.paypal.com/webapps/shoppingcart?flowlogging_id=5b34e7a28c306&mfid=1574729713217_5b34e7a28c306#/checkout/openButton" target="_blank">
+              Email:<br>
+              <input name="email" type="email">
+              <br>
+              Donation:<br>
+              $<input name="number" type="number">
+              <br><br>
+              <button type="submit" value="Submit">Donate!</button>
+            </form>
+          </div>
         </div>
       </div>
     </div>

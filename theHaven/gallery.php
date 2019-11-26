@@ -14,7 +14,7 @@
       <div class = "header">
       <h1>The Haven - Photo Gallery</h1>
       <div class="topnav" id="myTopnav">
-        <a href="#home" class="link">Home</a>
+        <a href="home.html" class="link">Home</a>
         <a href="hych.html" class ="link">How You Can Help</a>
         <a href="faa.html" class="link">Found an Animal?</a>
         <a href="gallery.php" class="active link">Photo Gallery</a>
