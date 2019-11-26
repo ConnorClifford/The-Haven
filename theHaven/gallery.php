@@ -11,19 +11,21 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-      <div class = "header">
-      <h1>The Haven - Photo Gallery</h1>
+    <div class = "header">
+      <img class="menuImg" src="images/haven_logo.png">
+      <a class="donateButton mobile" href = "https://www.paypal.com/donate/?token=HVQGoutaDUWbHbt8G3jBwOd3KLCHIOFuA0YozkJHkNzCsl6q_jDPE8rGXXBFkqrqMKL2eG&country.x=US&locale.x=US" target="_blank">Donate</a>
       <div class="topnav" id="myTopnav">
         <a href="home.html" class="link">Home</a>
         <a href="hych.html" class ="link">How You Can Help</a>
         <a href="faa.html" class="link">Found an Animal?</a>
-        <a href="gallery.php" class="active link">Photo Gallery</a>
+        <a href="#" class="active link">Photo Gallery</a>
         <a href="store.html" class="link">Store</a>
+        <a class="donateButton desktop" href = "https://www.paypal.com/donate/?token=HVQGoutaDUWbHbt8G3jBwOd3KLCHIOFuA0YozkJHkNzCsl6q_jDPE8rGXXBFkqrqMKL2eG&country.x=US&locale.x=US" target="_blank">Donate</a>
         <a href="javascript:void(0);" class="icon" onclick="mobileMenu()">
           <img src="images/menu.png" height="20px" width="20px"/>
         </a>
       </div>
-    </div>
+  </div>
 
     <div id="zoom_view" class="zoom_view">
       <img src="images/left_arrow.png" class="left_arrow" id="left">

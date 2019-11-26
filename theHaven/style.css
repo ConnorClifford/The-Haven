@@ -36,6 +36,7 @@ li{
   display: block;
   text-align: center;
   padding: 70px;
+
 }
 .header{
   font-family: 'Barlow', sans-serif;
@@ -51,12 +52,7 @@ li{
   padding:10px;
   font-size: 1.25em;
 }
-.header img {
-  width: 30%;
-  height: auto;
-  display: block;
-  margin: auto;
-}
+
 .topnav {
   font-family: 'Barlow', sans-serif;
   overflow: hidden;
@@ -84,6 +80,20 @@ li{
 .topnav .icon {
   display: none;
 }
+.donateButton{
+  display: block;
+  position: relative;
+  top:-5px;
+  padding: 10px;
+  width:50px;
+  margin:10px 10px 20px 20px;
+  background-color:#81ab45;
+  border-radius: 10px;
+  text-decoration: none;
+  color:white;
+  box-shadow: 2px 2px grey;
+}
+
 
 /*-----------------------Home-------------------------------------------------------*/
 video{
@@ -302,6 +312,9 @@ footer{
 
 /*-------------------------------------tablet responsive-------------------------------*/
 @media screen and (max-width: 900px) {
+  .desktop{
+    display:none;
+  }
   .row {
       grid-template-columns: auto ;
   }
@@ -312,10 +325,18 @@ footer{
     margin-right: 20px !important;
   }
   .header{
+    display:grid;
+    grid-template-columns: 30% 20% auto;
     height:50px;
   }
+  .menuImg {
+    width: 90%;
+    height: auto;
+    display: block;
+    padding:5px 0 0 5px;
+  }
   .topnav{
-    width: 60%;
+    width:40%;
     grid-template-columns: auto 60px;
     position:absolute;
     right:0px;
@@ -374,9 +395,14 @@ footer{
 }
 /*-------------------------------------desktop responsive-------------------------------*/
 @media screen and (min-width: 901px) {
-
+  .mobile{
+    display:none;
+  }
+  .donateButton{
+    top:-1px;
+  }
   .topnav{
-    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-columns: 18% 18% 18% 18% 18% auto;
     }
   .topnav a{
         margin: 5px 0;
