@@ -1,13 +1,28 @@
+@import url('https://fonts.googleapis.com/css?family=Barlow&display=swap');
+html{
+    font-family: 'Barlow', sans-serif;
+}
 body {
   margin:0px;
-  font-family: Arial, Helvetica, sans-serif;
-  background-image: url("images/forest2.jpg");
+  font-family: 'Barlow', sans-serif;
+  background-image: url("images/trees_bg.jpg");
+  background-size: 100%;
   background-attachment: fixed;
-  background-size: cover;
+}
+p{
+font-family: 'Barlow', sans-serif;
 }
 
 img{
-  width: 100%
+  width: 80%
+}
+li{
+  font-family: 'Barlow', sans-serif;
+}
+.logo {
+  display: block;
+  text-align: center;
+  padding: 70px;
 }
 
 .anchor{
@@ -16,8 +31,9 @@ img{
 }
 
 .header{
+  font-family: 'Barlow', sans-serif;
   z-index:1;
-  background-color: #666666;
+  background-color: #4E7235;
   width:100%;
   position: sticky;
   top:0px;
@@ -28,10 +44,16 @@ img{
   padding:10px;
   font-size: 1.25em;
 }
-
+.header img {
+  width: 30%;
+  height: auto;
+  display: block;
+  margin: auto;
+}
 .topnav {
+  font-family: 'Barlow', sans-serif;
   overflow: hidden;
-  background-color: #666666;
+  background-color: #4E7235;
   width: 100%;
   display:grid;
   position: sticky;
@@ -39,6 +61,7 @@ img{
 }
 
 .topnav a {
+  font-family: 'Barlow', sans-serif;
   float: left;
   display: block;
   color: #f2f2f2;
@@ -50,14 +73,78 @@ img{
 }
 
 .topnav a:hover {
-  background-color: #888888;
+  background-color: #81AB45;
 }
 
 .topnav .icon {
   display: none;
 }
 
+.gallery{
+  display: grid;
+  grid-gap: 10px;
+  margin: auto;
+  padding:20px;
+}
+.gallery_img{
+  width:100%;
+  border:1px solid black;
+}
+
+.zoom_view{
+  display:none;
+  width:100%;
+  margin:auto;
+  position: fixed;
+  top:100px;
+  z-index: 5;
+  background-color: rgba(0,0,0,0.7);
+}
+
+.grid{
+  display:grid;
+}
+
+.zoom_img{
+  grid-column: 3/5;
+  width:100%;
+  padding: 20px 0;
+}
+
+.left_arrow{
+  grid-column: 2/3;
+  width:50%;
+  margin: auto;
+  padding:30px;
+}
+.right_arrow{
+  grid-column: 5/6;
+  width:50%;
+  margin: auto;
+  padding:30px;
+}
+.close{
+  position: absolute;
+  top:0;
+  right: 0;
+  width:50px;
+  padding:10px;
+}
+.row {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+
 @media screen and (max-width: 600px) {
+  .row {
+      grid-template-columns: auto ;
+    }
+    .flip-box{
+    width: 100% !important;
+    margin:0px !important;
+    margin-bottom: 50px !important;
+  margin-right: 20px !important;
+    }
   .header{
     height:50px;
   }
@@ -96,12 +183,28 @@ img{
   .responsive .link{
     margin-right: 60px;
   }
+  .gallery{
+    grid-template-columns: 50% 50%;
+  }
+  .zoom_view{
+    grid-template-columns: 20% 30% 30% 20%;
+  }
+  .zoom_img{
+    grid-column: 2/4;
+  }
+  .left_arrow{
+    grid-column: 1/2;
+  }
+  .right_arrow{
+    grid-column: 4/5;
+  }
+  .close{
+    grid-column: 4/5;
+  }
 }
 
 @media screen and (min-width: 601px) {
-  .header{
-    margin-top: 400px;
-  }
+
   .topnav{
     grid-template-columns: 20% 20% 20% 20% 20%;
     }
@@ -114,13 +217,16 @@ img{
   .topnav a.icon {
     display:none;
   }
+  .gallery{
+    grid-template-columns: 25% 25% 25% 25%;
+  }
 }
 
 .content{
   width: auto;
   background-color: white;
   padding:50px;
-  margin:0px 20px;
+  margin:70px 70px 70px 70px;
 }
 
 video{
@@ -146,7 +252,7 @@ footer{
 .footer_item{
   margin:auto;
   padding:10px;
-  width: 75%;
+  width: 30%;
 }
 
 .collapsible {
@@ -182,12 +288,79 @@ footer{
 .navlinks_item a{
   color:white;
 }
+.flip-box {
+  background-color: transparent;
+  display: grid;
+  grid-template-columns: auto;
+  width: 500px;
+  height: 200px;
+  border: none;
+  perspective: 1000px;
+  margin: 30px;
+}
 
+.flip-box-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  padding-top: 20px;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
 
-@media screen and (min-width: 601px){
+.flip-box:hover .flip-box-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-box-front,
+.flip-box-back {
+  position: absolute;
+  background-image: url("https://pbs.twimg.com/media/Dc-YmrvU8AAa56r.jpg");
+  background-size: auto;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.flip-box-front {
+  background-color: #4E7235;
+  color: white;
+}
+
+.flip-box-back {
+  background-color: #4E7235;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+.center {
+  height: 200px;
+  position: relative;
+  border: none;
+}
+
+.center p {
+  margin: 0;
+  position: absolute;
+  top: 20%;
+  left: 20%;
+  -ms-transform: translate(-10%, -10%);
+  transform: translate(-10%, -10%);
+}
+
+.row {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+@media screen and (max-width: 601px){
   footer{
       text-align: left;
       grid-template-columns: 50% auto;
+  }
+  .row {
+    grid-template-columns: auto;
   }
   button{
     display:block;
