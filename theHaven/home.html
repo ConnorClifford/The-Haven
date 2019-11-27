@@ -5,16 +5,22 @@
       <meta name="description" content="The Haven sanctuary for injured and orphaned animals">
       <meta name="keywords" content="animals, injured, orphaned, charity, baby animal, hurt, stranded, lost">
       <meta name="author" content="Web Design Workshop I group 3">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">    <title>The Haven - Home</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>The Haven - Home</title>
     <link rel="stylesheet" href="resetStandard.css">
     <link rel="stylesheet" href="style.css">
 
   </head>
   <body>
-      <div class = "logo">
-      <img src="images/haven_logo.png">
+    <div class = "logo desktop">
+      <a href="##">
+        <img src="images/haven_logo.png">
+      </a>
     </div>
     <div class = "header">
+      <a href="home.html">
+        <img class="menuImg mobile" src="images/haven_logo.png">
+      </a>
       <a class="donateButton mobile" href = "https://www.paypal.com/donate/?token=HVQGoutaDUWbHbt8G3jBwOd3KLCHIOFuA0YozkJHkNzCsl6q_jDPE8rGXXBFkqrqMKL2eG&country.x=US&locale.x=US" target="_blank">Donate</a>
       <div class="topnav" id="myTopnav">
         <a href="#" class="active link">Home</a>
@@ -29,9 +35,8 @@
       </div>
   </div>
 
-    <a name="intro"></a>
     <div class="content">
-      <div class="group">
+      <div class="group" id="intro">
       <h3>The Haven began with a single caring individual...</h3>
         <p>In 1987 Mary Jane Isner began caring for injured and orphaned squirrels in her home, as a favor to the
            Orlando Humane Society.</p>
@@ -50,15 +55,13 @@
       </div>
     </div>
 
-      <a name="interview"></a>
-      <video poster="images/poster.jpg" controls>
+      <video id="interview" poster="images/poster.jpg" controls>
         <source src="https://cdn.boldernet.net/0/0/194/194737h272.mp4" type="video/mp4">
         Your browser does not support HTML5 video. Visit https://www.growingbolder.com/help-for-orphaned-animals-194738/ to see full interview.
       </video>
 
-    <a name="rehabilitation"></a>
     <div class="content">
-      <div class="group">
+      <div class="group" id="rehabilitation">
         <h3>Rehabilitation</h3>
         <p>Our first priority lies with the quality care of the lives entrusted to our care, so that they can
            be returned to their home in the wild. Volunteers are needed every single day of the year to provide
@@ -69,8 +72,7 @@
                 talent to help with some of the more serious injuries and provides guidance and support to The Haven.</p>
       </div>
 
-      <a name="education"></a>
-      <div class="group">
+      <div class="group" id="education">
         <h3>Education</h3>
         <p>The Haven provides presentations to local schools, clubs, and other organizations to promote awareness
            of wildlife's vital role in our ecosystem. Emphasis is placed on the importance of conservation and
@@ -110,9 +112,7 @@
                 <a href ="hych.html#contribute">Make a Financial Contribution</a>
                 <a href ="hych.html#supplies">Donate Supplies</a>
                 <a href ="hych.html#fundraise">Host a Fundraiser</a>
-                <a href ="hych.html#supplies">Donate Supplies</a>
                 <a href ="hych.html#needs">Needs List</a>
-                <a href ="hych.html#wish">Wish List</a>
             </div>
           </div>
         <div class="navlinks_item">

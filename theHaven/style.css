@@ -26,8 +26,21 @@ li{
 .content{
   width: auto;
   background-color: white;
-  padding:50px;
-  margin:70px 70px 70px 70px; /*change*/
+  padding:8%;
+  margin:70px 5% /*change*/
+}
+.grid{
+  display:grid;
+  grid-gap:10px;
+  padding: 20px 0;
+}
+.grid_item{
+  display: block;
+  background-color:#dedede;
+  padding:10px;
+}
+.center{
+  text-align: center;
 }
 
 /*-----------------------Navigation--------------------------------------------------*/
@@ -35,7 +48,7 @@ li{
   display: block;
   text-align: center;
   padding: 70px;
-
+  background-image: linear-gradient(rgba(255,0,0,0), rgba(78,114,53,1));
 }
 .header{
   font-family: 'Barlow', sans-serif;
@@ -85,7 +98,7 @@ li{
   top:-5px;
   padding: 10px;
   width:50px;
-  margin:10px 10px 20px 20px;
+  margin:10px 0;
   background-color:#81ab45;
   border-radius: 10px;
   text-decoration: none;
@@ -104,104 +117,19 @@ video{
 }
 
 /*----------------------HYCH--------------------------------------------------------*/
-.hych h3{
-  font-size: 40px;
+.grid{
   text-align: center;
-  margin:20px;
-  padding-top:90px;
-
 }
-.hych p{
-  font-size: 20px;
-  text-align: center;
-  padding:0px 40px;
+.needs .center{
+  padding-bottom: 20px;
 }
-.flip-box {
-  background-size: auto;
-  border: none;
+.needs ul{
+  display: block;
+  width:50%;
+  margin:auto;
 }
-
-.flip-box-inner {
-  margin:40px 0px;
-}
-
-.flip-box-inner p{
-  padding:0px 50px;
-}
-
-h1{
-  padding: 20px 20px;
-  font-size:30px ;
-}
-
 /*----------------------FAA--------------------------------------------------------*/
-.row2 {
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    padding:30px 0;
-    grid-gap:20px;
-    flex-direction: column;
-  }
-  .b2{
-    display: none;
-    text-align: left;
-  }
 
-  .show{
-    display: block;
-  }
-
-  .b1 h2{
-    margin: 2.6em 0;
-    color:white;
-  }
-
-.flip-box2 {
-  background-color: transparent;
-  display: flex;
-  width: 100%;
-  border: none;
-  align-content: center;
-}
-
-.flip-box-inner2 {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  padding-top: 20px;
-}
-
-.flip-box-front2 {
-  position: fixed;
-  display: flex;
-  width: 100%;
-  height: 100%;
-  color: white;
-}
-
-.center p{
-  background-color: white;
-  color:black;
-  padding:20px;
-}
-
-.Bird{
-  background-image: url("https://upload.wikimedia.org/wikipedia/commons/7/77/Northernmockingbird.jpg");
-  background-size: 100%;
-}
-.Squirrels{
-  background-image: url("https://upload.wikimedia.org/wikipedia/commons/0/0a/Eastern_Grey_Squirrel.jpg");
-  background-size: 100%;
-}
-.Bunnies{
-  background-image: url("https://quick-catch.com/wp-content/uploads/2014/01/rabbit-removal-jacksonville.jpg");
-  background-size: 100%;
-}
-.Oppossums{
-  background-image: url("http://woodstream.scene7.com/is/image/woodstream/hh-animals-opossum-3?$ProductPgLarge2$");
-  background-size: 95%;
-}
 /*----------------------Gallery--------------------------------------------------------*/
 .gallery{
   display: grid;
@@ -221,9 +149,6 @@ h1{
   top:100px;
   z-index: 5;
   background-color: rgba(0,0,0,0.7);
-}
-.grid{
-  display:grid;
 }
 .zoom_img{
   grid-column: 3/5;
@@ -249,6 +174,9 @@ h1{
   width:50px;
   padding:10px;
 }
+.grid{
+  display:grid;
+}
 
 /*----------------------Store--------------------------------------------------------*/
 .storeGrid{
@@ -260,9 +188,8 @@ h1{
 }
 .storeItem{
   display:grid;
-  width:75%;
+  width:90%;
   margin:auto;
-  grid-template-columns: 50% 50%;
   background-color: #dedede;
 }
 .storeItem img{
@@ -273,7 +200,10 @@ h1{
   padding:10px;
 }
 .storeItem form{
+  width:80%;
+  display: block;
   padding: 10px 0;
+  margin:auto;
 }
 .storeItem button{
   width:100px;
@@ -301,7 +231,6 @@ footer{
 .footer_item img{
   width: 30%;
 }
-
 .collapsible {
   background-color: #666666;
   color: white;
@@ -332,27 +261,11 @@ footer{
   color:white;
 }
 
-/*-------------------------------------mobile responsive-------------------------------*/
-
-@media screen and (max-width: 600px) {
-  .gallery{
-    grid-template-columns: 50% 50%;
-  }
-}
 
 /*-------------------------------------tablet responsive-------------------------------*/
 @media screen and (max-width: 900px) {
   .desktop{
     display:none;
-  }
-  .row {
-      grid-template-columns: auto ;
-  }
-  .flip-box{
-    width: 100% !important;
-    margin:0px !important;
-    margin-bottom: 50px !important;
-    margin-right: 20px !important;
   }
   .header{
     display:grid;
@@ -366,13 +279,16 @@ footer{
     padding:5px 0 0 5px;
   }
   .topnav{
-    width:40%;
-    grid-template-columns: auto 60px;
+    width:50%;
+    grid-template-columns: auto 40px;
     position:absolute;
     right:0px;
   }
   .topnav a{
     text-align: right;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
   }
   .topnav a:not(.active) {
     display: none;
@@ -382,7 +298,7 @@ footer{
     padding:13px 10px 10px 10px;
     margin:0px;
     position: absolute;
-    right:15px;
+    right:0;
   }
   .topnav.responsive {
     grid-template-columns: auto;
@@ -396,9 +312,20 @@ footer{
   .topnav.responsive a {
     display: block;
     text-align: right;
+    overflow: visible;
+    text-overflow: clip;
   }
   .responsive .link{
-    margin-right: 60px;
+    margin-right: 30%;
+    padding-right:30px;
+  }
+  .topnav .donateButton{
+    position: absolute;
+    text-align: right;
+    right:-100px;
+  }
+  .col2{
+    grid-template-columns: auto;
   }
   .gallery{
     grid-template-columns: 33% 33% 33%;
@@ -423,6 +350,14 @@ footer{
     text-align: center;
   }
 }
+
+/*-------------------------------------mobile responsive-------------------------------*/
+
+@media screen and (max-width: 600px) {
+  .gallery{
+    grid-template-columns: 50% 50%;
+  }
+}
 /*-------------------------------------desktop responsive-------------------------------*/
 @media screen and (min-width: 901px) {
   .mobile{
@@ -430,6 +365,7 @@ footer{
   }
   .donateButton{
     top:-1px;
+    right:-10px;
   }
   .topnav{
     grid-template-columns: 18% 18% 18% 18% 18% auto;
@@ -442,6 +378,9 @@ footer{
     }
   .topnav a.icon {
     display:none;
+  }
+  .active{
+    background-color: #81ab45;
   }
   .gallery{
     grid-template-columns: 25% 25% 25% 25%;
@@ -464,4 +403,12 @@ footer{
   video{
     width:66%;
   }
-}
+  .col2{
+    grid-template-columns: auto auto;
+  }
+  .wide{
+    grid-column: 1/3;
+  }
+  .storeItem{
+    grid-template-columns: 50% 50%;
+  }

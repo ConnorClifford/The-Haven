@@ -5,15 +5,21 @@
       <meta name="description" content="The Haven sanctuary for injured and orphaned animals">
       <meta name="keywords" content="animals, injured, orphaned, charity, baby animal, hurt, stranded, lost">
       <meta name="author" content="Web Design Workshop I group 3">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">    <title>The Haven - Home</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Haven - Store</title>
     <link rel="stylesheet" href="resetStandard.css">
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
+    <div class = "logo desktop">
+      <a href="home.html">
+        <img src="images/haven_logo.png">
+      </a>
+    </div>
     <div class = "header">
-      <img class="menuImg" src="images/haven_logo.png">
-      <a class="donateButton mobile" href = "https://www.paypal.com/donate/?token=HVQGoutaDUWbHbt8G3jBwOd3KLCHIOFuA0YozkJHkNzCsl6q_jDPE8rGXXBFkqrqMKL2eG&country.x=US&locale.x=US" target="_blank">Donate</a>
+      <a href="home.html">
+        <img class="menuImg mobile" src="images/haven_logo.png">
+      </a>      <a class="donateButton mobile" href = "https://www.paypal.com/donate/?token=HVQGoutaDUWbHbt8G3jBwOd3KLCHIOFuA0YozkJHkNzCsl6q_jDPE8rGXXBFkqrqMKL2eG&country.x=US&locale.x=US" target="_blank">Donate</a>
       <div class="topnav" id="myTopnav">
         <a href="home.html" class="link">Home</a>
         <a href="hych.html" class ="link">How You Can Help</a>
@@ -30,14 +36,13 @@
     <div class="content">
       <h1>The Haven Store</h1>
       <div class="storeGrid">
-        <div class="storeItem">
-          <a name="shirts"></a>
+        <div class="storeItem" id="shirts">
           <img src="images/shirt.jpg" alt="t-shirt">
           <div>
             <h3>The Haven T-Shirt</h3>
             <form action="https://www.paypal.com/webapps/shoppingcart?flowlogging_id=5b34e7a28c306&mfid=1574729713217_5b34e7a28c306#/checkout/openButton" target="_blank">
               Color:<br>
-              <input list="colors" name="colors">
+              <input list="colors" name="colors" size="10">
                 <datalist id="colors">
                   <option value="teal">
                   <option value="black">
@@ -46,7 +51,7 @@
                 </datalist>
                 <br>
               Size:<br>
-              <input list="sizes" name="sizes">
+              <input list="sizes" name="sizes" size="10">
                 <datalist id="sizes">
                   <option value="XS">
                   <option value="S">
@@ -59,14 +64,13 @@
             </form>
           </div>
         </div>
-        <div class="storeItem">
-          <a name="stickers"></a>
+        <div class="storeItem" id="stickers">
           <img src="images/sticker.jpg" alt="sticker">
           <div>
             <h3>The Haven Sticker</h3>
             <form action="https://www.paypal.com/webapps/shoppingcart?flowlogging_id=5b34e7a28c306&mfid=1574729713217_5b34e7a28c306#/checkout/openButton" target="_blank">
               Size:<br>
-              <input list="stickerSizes" name="stickerSizes">
+              <input list="stickerSizes" name="stickerSizes" size="10">
                 <datalist id="stickerSizes">
                   <option value='4"'>
                   <option value='6"'>
@@ -77,18 +81,17 @@
             </form>
           </div>
         </div>
-        <div class="storeItem">
-          <a name="membership"></a>
+        <div class="storeItem" id="membership">
           <img src="images/membership.jpg" alt="membership">
           <div>
             <h3>The Haven Membership</h3>
             <p>Any amount helps, and any donation makes you eligible to receive our yearly newsletter! If you would like to recieve our newsletter, please leave your email below. If not, just input the dollar amount!</p>
             <form action="https://www.paypal.com/webapps/shoppingcart?flowlogging_id=5b34e7a28c306&mfid=1574729713217_5b34e7a28c306#/checkout/openButton" target="_blank">
               Email:<br>
-              <input name="email" type="email">
+              <input name="email" type="email" size="15">
               <br>
               Donation:<br>
-              $<input name="number" type="number">
+              $<input name="number" type="number" style="width:40%; margin:auto">
               <br><br>
               <button type="submit" value="Submit">Donate!</button>
             </form>
@@ -126,9 +129,7 @@
                 <a href ="hych.html#contribute">Make a Financial Contribution</a>
                 <a href ="hych.html#supplies">Donate Supplies</a>
                 <a href ="hych.html#fundraise">Host a Fundraiser</a>
-                <a href ="hych.html#supplies">Donate Supplies</a>
                 <a href ="hych.html#needs">Needs List</a>
-                <a href ="hych.html#wish">Wish List</a>
             </div>
           </div>
         <div class="navlinks_item">

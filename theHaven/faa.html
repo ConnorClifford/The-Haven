@@ -5,14 +5,21 @@
       <meta name="description" content="The Haven sanctuary for injured and orphaned animals">
       <meta name="keywords" content="animals, injured, orphaned, charity, baby animal, hurt, stranded, lost">
       <meta name="author" content="Web Design Workshop I group 3">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">    <title>The Haven - Home</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Haven - Found an Animal?</title>
     <link rel="stylesheet" href="resetStandard.css">
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
+    <div class = "logo desktop">
+      <a href="home.html">
+        <img src="images/haven_logo.png">
+      </a>
+    </div>
       <div class = "header">
-        <img class="menuImg" src="images/haven_logo.png">
+        <a href="home.html">
+          <img class="menuImg mobile" src="images/haven_logo.png">
+        </a>
         <a class="donateButton mobile" href = "https://www.paypal.com/donate/?token=HVQGoutaDUWbHbt8G3jBwOd3KLCHIOFuA0YozkJHkNzCsl6q_jDPE8rGXXBFkqrqMKL2eG&country.x=US&locale.x=US" target="_blank">Donate</a>
         <div class="topnav" id="myTopnav">
           <a href="home.html" class="link">Home</a>
@@ -27,9 +34,8 @@
         </div>
     </div>
 
-    <a class="anchor" name="intro"></a>
     <div class="content">
-      <div class="group">
+      <div class="group" id="intro">
         <h1>So You Found an Animal?</h1>
           <p>Before you call us, please read the following:</p>
           <p>Most animals give birth during the spring time which also makes this OUR busiest
@@ -38,123 +44,65 @@
             has touched it (yes, including birds). If you know where the nest is and that the
              mother is around it can be placed back in its nest.</p>
       </div>
-      <a class="anchor" name="adults"></a>
-      <div class="group">
-        <h3 style="color:red">Injured Adult Animals</h3>
-        <p>Injured animals can be very aggressive and may be ill. If an animal appears
-           ill, use extreme caution and place a heavy box with adequate ventilation
-            over it and contact a rehabilitator or you local animal control agency.</p>
+      <h3 style="color:red">Injured Adult Animals</h3>
+      <div class="grid col2">
+        <div class="grid_item wide" id="adults">
+          <p>Injured animals can be very aggressive and may be ill. If an animal appears
+             ill, use extreme caution and place a heavy box with adequate ventilation
+              over it and contact a rehabilitator or you local animal control agency.</p>
+        </div>
       </div>
 
-      <a class="anchor" name="babies"></a>
       <h3>Baby Animals</h3>
-      <div class="group">
+      <div class="grid col2">
+      <div class="grid_item wide" id="babies">
         <h4 style="color:red">Raccoons, Foxes, Skunks</h4>
           <p>These animals are potential rabies carriers. You should contact us or any other
              rehabber before attempting to handle them.</p>
-          <p>Please call us at: <b>(407) 260-6137</b></p>
+          <p>Please call us at: <strong>(407) 260-6137</strong></p>
       </div>
-
-      <div class="row2">
-      <div class="group" id="first">
-        <div class="Bird">
-          <div class="flip-box2">
-            <div class="flip-box-inner2">
-              <div class="b1">
-                <h2>Birds</h2>
-              </div>
-              <div class="b2" id="firstText">
-                <div class="center">
-              <p>If the baby is not fully feathered try placing it back in the nest if possible.
-                 If the nest is too high you can hang a grass-lined basket or a plastic container
-                  (with holes poked in the bottom for drainage in case of rain) in the same or
-                   a nearby tree. Watch from a distance for about 20 minutes and if the mother
-                    is OK she will return to care for it. If this fails, contact a rehabilitator.
-            <br><br>
-              If the baby IS fully feathered, has tail feathers and is hopping on the ground,
-                 it is a fledgling. This is a normal learning stage and the mother is very likely
-                  nearby feeding it. You may place the bird back in the nest if it is within reach,
-                   but chances are he will hop right back out. This is a very necessary stage at
-                    which the young bird learns how to fly, how to find food and to watch out for
-                     predators. The birds mother can teach him these things much better than we
-                      can, please leave these birds be. Fledglings will be flying within a couple
-                       of days, so if you have cats, perhaps they could stay inside for a short
-                        time.</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-
-
-      <div class="group" id="second">
-       <div class="Squirrels">
-        <div class="flip-box2">
-          <div class="flip-box-inner2">
-            <div class="b1">
-              <h2>Squirrels</h2>
-            </div>
-            <div class="b2" id="secondText">
-              <!--centering the stupid backside of the card-->
-              <div class="center">
+      <div class="grid_item">
+        <h4>Birds</h4>
+          <p><strong>If the baby is not fully feathered</strong>, try placing it back in the nest if possible.
+             If the nest is too high you can hang a grass-lined basket or a plastic container
+              (with holes poked in the bottom for drainage in case of rain) in the same or
+               a nearby tree. Watch from a distance for about 20 minutes and if the mother
+                is OK she will return to care for it. If this fails, contact a rehabilitator.</p>
+            <br>
+          <p><strong>If the baby IS fully feathered</strong>, has tail feathers and is hopping on the ground,
+             it is a fledgling. This is a normal learning stage and the mother is very likely
+              nearby feeding it. You may place the bird back in the nest if it is within reach,
+               but chances are he will hop right back out. This is a very necessary stage at
+                which the young bird learns how to fly, how to find food and to watch out for
+                 predators. The birds mother can teach him these things much better than we
+                  can, please leave these birds be. Fledglings will be flying within a couple
+                   of days, so if you have cats, perhaps they could stay inside for a short
+                    time.</p>
+      </div>
+      <div class="grid_item">
+        <h4>Squirrels</h4>
           <p>If a baby squirrel falls from it's nest, leave it be and watch from a distance
              for a short time. If the mother is around she will likely retrieve it. If the
               nest is destroyed, give the mother a chance to move the babies because she
                usually has a second nest built for just such an occasion! If the baby is
                injured or appears sick , place it in a warm dark place and contact a rehabber.</p>
-              </div>
-             </div>
-           </div>
-         </div>
-       </div>
       </div>
-
-      <div class="group" id="third">
-        <div class="Bunnies">
-        <div class="flip-box2">
-          <div class="flip-box-inner2">
-            <div class="b1">
-              <h2>Bunnies</h2>
-            </div>
-            <div class="b2" id="thirdText">
-              <!--centering the stupid backside of the card-->
-              <div class="center">
-                <p>Mother hares spend less than one hour per day with their babies. They forage
-                   during the day and return only at dusk and dawn to feed their babies. If you
-                    uncover a nest of infants, leave them be and check them again in the morning.
-                    If they appear round and plump, the mother has been back to care for them.
-                    If you are unsure, contact a rehabber before removing them.</p>
-              </div>
-            </div>
-          </div>
-        </div>
+      <div class="grid_item">
+        <h4>Bunnies</h4>
+          <p>Mother hares spend less than one hour per day with their babies. They forage
+             during the day and return only at dusk and dawn to feed their babies. If you
+              uncover a nest of infants, leave them be and check them again in the morning.
+              If they appear round and plump, the mother has been back to care for them.
+              If you are unsure, contact a rehabber before removing them.</p>
       </div>
-    </div>
-
-      <div class="group" id="fourth">
-        <div class="Oppossums">
-        <div class="flip-box2">
-          <div class="flip-box-inner2">
-            <div class="b1">
-              <h2>Oppossums</h2>
-            </div>
-            <div class="b2" id="fourthText">
-              <!--centering the stupid backside of the card-->
-              <div class="center">
+      <div class="grid_item">
+        <h4>Opossums</h4>
           <p>Opossums ride on their mothers back or in their pouch until they are about 8
             inches long. If you find a small opossum wandering by himself, scoop him into
              a well-ventilated box with a towel and call a rehabber.</p>
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
     </div>
   </div>
-
-
 
     <footer>
       <div class="footer_item left">
@@ -184,9 +132,7 @@
               <a href ="hych.html#contribute">Make a Financial Contribution</a>
               <a href ="hych.html#supplies">Donate Supplies</a>
               <a href ="hych.html#fundraise">Host a Fundraiser</a>
-              <a href ="hych.html#supplies">Donate Supplies</a>
               <a href ="hych.html#needs">Needs List</a>
-              <a href ="hych.html#wish">Wish List</a>
             </div>
           </div>
         <div class="navlinks_item">
@@ -221,24 +167,5 @@
     </footer>
     <script src="sitemap_menu.js"></script>
     <script src="main.js"></script>
-    <script>
-    var boxes = document.getElementsByClassName("flip-box-inner2");
-
-
-    document.getElementById("first").addEventListener("click", function(){
-      document.getElementById('firstText').classList.toggle("show");
-    });
-    document.getElementById("second").addEventListener("click", function(){
-      document.getElementById('secondText').classList.toggle("show");
-    });
-    document.getElementById("third").addEventListener("click", function(){
-      document.getElementById('thirdText').classList.toggle("show");
-    });
-    document.getElementById("fourth").addEventListener("click", function(){
-      document.getElementById('fourthText').classList.toggle("show");
-    });
-
-
-    </script>
   </body>
 </html>
