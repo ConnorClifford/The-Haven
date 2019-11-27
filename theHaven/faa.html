@@ -54,47 +54,107 @@
              rehabber before attempting to handle them.</p>
           <p>Please call us at: <b>(407) 260-6137</b></p>
       </div>
-      <div class="group">
-        <h4>Birds</h4>
-          <p>If the baby is not fully feathered try placing it back in the nest if possible.
-             If the nest is too high you can hang a grass-lined basket or a plastic container
-              (with holes poked in the bottom for drainage in case of rain) in the same or
-               a nearby tree. Watch from a distance for about 20 minutes and if the mother
-                is OK she will return to care for it. If this fails, contact a rehabilitator.</p>
 
-          <p>If the baby IS fully feathered, has tail feathers and is hopping on the ground,
-             it is a fledgling. This is a normal learning stage and the mother is very likely
-              nearby feeding it. You may place the bird back in the nest if it is within reach,
-               but chances are he will hop right back out. This is a very necessary stage at
-                which the young bird learns how to fly, how to find food and to watch out for
-                 predators. The birds mother can teach him these things much better than we
-                  can, please leave these birds be. Fledglings will be flying within a couple
-                   of days, so if you have cats, perhaps they could stay inside for a short
-                    time.</p>
-      </div>
-      <div class="group">
-        <h4>Squirrels</h4>
+      <div class="row2">
+      <div class="group" id="first">
+        <div class="Bird">
+          <div class="flip-box2">
+            <div class="flip-box-inner2">
+              <div class="b1">
+                <h2>Birds</h2>
+              </div>
+              <div class="b2" id="firstText">
+                <div class="center">
+              <p>If the baby is not fully feathered try placing it back in the nest if possible.
+                 If the nest is too high you can hang a grass-lined basket or a plastic container
+                  (with holes poked in the bottom for drainage in case of rain) in the same or
+                   a nearby tree. Watch from a distance for about 20 minutes and if the mother
+                    is OK she will return to care for it. If this fails, contact a rehabilitator.
+            <br><br>
+              If the baby IS fully feathered, has tail feathers and is hopping on the ground,
+                 it is a fledgling. This is a normal learning stage and the mother is very likely
+                  nearby feeding it. You may place the bird back in the nest if it is within reach,
+                   but chances are he will hop right back out. This is a very necessary stage at
+                    which the young bird learns how to fly, how to find food and to watch out for
+                     predators. The birds mother can teach him these things much better than we
+                      can, please leave these birds be. Fledglings will be flying within a couple
+                       of days, so if you have cats, perhaps they could stay inside for a short
+                        time.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+      <div class="group" id="second">
+       <div class="Squirrels">
+        <div class="flip-box2">
+          <div class="flip-box-inner2">
+            <div class="b1">
+              <h2>Squirrels</h2>
+            </div>
+            <div class="b2" id="secondText">
+              <!--centering the stupid backside of the card-->
+              <div class="center">
           <p>If a baby squirrel falls from it's nest, leave it be and watch from a distance
              for a short time. If the mother is around she will likely retrieve it. If the
               nest is destroyed, give the mother a chance to move the babies because she
                usually has a second nest built for just such an occasion! If the baby is
                injured or appears sick , place it in a warm dark place and contact a rehabber.</p>
+              </div>
+             </div>
+           </div>
+         </div>
+       </div>
       </div>
-      <div class="group">
-        <h4>Bunnies</h4>
-          <p>Mother hares spend less than one hour per day with their babies. They forage
-             during the day and return only at dusk and dawn to feed their babies. If you
-              uncover a nest of infants, leave them be and check them again in the morning.
-              If they appear round and plump, the mother has been back to care for them.
-              If you are unsure, contact a rehabber before removing them.</p>
+
+      <div class="group" id="third">
+        <div class="Bunnies">
+        <div class="flip-box2">
+          <div class="flip-box-inner2">
+            <div class="b1">
+              <h2>Bunnies</h2>
+            </div>
+            <div class="b2" id="thirdText">
+              <!--centering the stupid backside of the card-->
+              <div class="center">
+                <p>Mother hares spend less than one hour per day with their babies. They forage
+                   during the day and return only at dusk and dawn to feed their babies. If you
+                    uncover a nest of infants, leave them be and check them again in the morning.
+                    If they appear round and plump, the mother has been back to care for them.
+                    If you are unsure, contact a rehabber before removing them.</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="group">
-        <h4>Opossums</h4>
+    </div>
+
+      <div class="group" id="fourth">
+        <div class="Oppossums">
+        <div class="flip-box2">
+          <div class="flip-box-inner2">
+            <div class="b1">
+              <h2>Oppossums</h2>
+            </div>
+            <div class="b2" id="fourthText">
+              <!--centering the stupid backside of the card-->
+              <div class="center">
           <p>Opossums ride on their mothers back or in their pouch until they are about 8
             inches long. If you find a small opossum wandering by himself, scoop him into
              a well-ventilated box with a towel and call a rehabber.</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
+  </div>
+
+
 
     <footer>
       <div class="footer_item left">
@@ -161,5 +221,24 @@
     </footer>
     <script src="sitemap_menu.js"></script>
     <script src="main.js"></script>
+    <script>
+    var boxes = document.getElementsByClassName("flip-box-inner2");
+
+
+    document.getElementById("first").addEventListener("click", function(){
+      document.getElementById('firstText').classList.toggle("show");
+    });
+    document.getElementById("second").addEventListener("click", function(){
+      document.getElementById('secondText').classList.toggle("show");
+    });
+    document.getElementById("third").addEventListener("click", function(){
+      document.getElementById('thirdText').classList.toggle("show");
+    });
+    document.getElementById("fourth").addEventListener("click", function(){
+      document.getElementById('fourthText').classList.toggle("show");
+    });
+
+
+    </script>
   </body>
 </html>

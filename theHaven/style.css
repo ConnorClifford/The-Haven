@@ -13,7 +13,6 @@ body {
 p{
 font-family: 'Barlow', sans-serif;
 }
-
 img{
   width: 80%
 }
@@ -105,74 +104,104 @@ video{
 }
 
 /*----------------------HYCH--------------------------------------------------------*/
-.row {
-    display: grid;
-    margin:auto;
-    grid-template-columns: auto auto;
-    padding:30px;
-    grid-gap:20px;
-  }
+.hych h3{
+  font-size: 40px;
+  text-align: center;
+  margin:20px;
+  padding-top:90px;
 
+}
+.hych p{
+  font-size: 20px;
+  text-align: center;
+  padding:0px 40px;
+}
 .flip-box {
-  background-color: transparent;
-  display: flex;
-  width: 100%;
-  height: 200px;
+  background-size: auto;
   border: none;
-  perspective: 1000px;
-  align-content: center;
-  vertical-align: middle;
 }
 
 .flip-box-inner {
+  margin:40px 0px;
+}
+
+.flip-box-inner p{
+  padding:0px 50px;
+}
+
+h1{
+  padding: 20px 20px;
+  font-size:30px ;
+}
+
+/*----------------------FAA--------------------------------------------------------*/
+.row2 {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    padding:30px 0;
+    grid-gap:20px;
+    flex-direction: column;
+  }
+  .b2{
+    display: none;
+    text-align: left;
+  }
+
+  .show{
+    display: block;
+  }
+
+  .b1 h2{
+    margin: 2.6em 0;
+    color:white;
+  }
+
+.flip-box2 {
+  background-color: transparent;
+  display: flex;
+  width: 100%;
+  border: none;
+  align-content: center;
+}
+
+.flip-box-inner2 {
   position: relative;
   width: 100%;
   height: 100%;
   text-align: center;
   padding-top: 20px;
-  transition: transform 0.5s;
-  transform-style: preserve-3d;
 }
 
-.flip-box:hover .flip-box-inner {
-  transform: rotateY(180deg);
-}
-
-.flip-box-front,
-.flip-box-back {
+.flip-box-front2 {
   position: fixed;
   display: flex;
-  background-image: url("https://pbs.twimg.com/media/Dc-YmrvU8AAa56r.jpg");
-  background-size: auto;
   width: 100%;
   height: 100%;
-  backface-visibility: hidden;
-  vertical-align: middle;
-  background-color: #4E7235;
   color: white;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-}
-.flip-box-back {
-  background-color: #4E7235;
-  transform: rotateY(180deg);
-}
-.center {
-  height: 200px;
-  border: none;
-}
-.center p {
-  margin: 0;
-  position: absolute;
-  top: 20%;
-  left: 20%;
-  -ms-transform: translate(-10%, -10%);
-  transform: translate(-10%, -10%);
 }
 
-/*----------------------FAA--------------------------------------------------------*/
+.center p{
+  background-color: white;
+  color:black;
+  padding:20px;
+}
 
+.Bird{
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/7/77/Northernmockingbird.jpg");
+  background-size: 100%;
+}
+.Squirrels{
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/0/0a/Eastern_Grey_Squirrel.jpg");
+  background-size: 100%;
+}
+.Bunnies{
+  background-image: url("https://quick-catch.com/wp-content/uploads/2014/01/rabbit-removal-jacksonville.jpg");
+  background-size: 100%;
+}
+.Oppossums{
+  background-image: url("http://woodstream.scene7.com/is/image/woodstream/hh-animals-opossum-3?$ProductPgLarge2$");
+  background-size: 95%;
+}
 /*----------------------Gallery--------------------------------------------------------*/
 .gallery{
   display: grid;
@@ -272,6 +301,7 @@ footer{
 .footer_item img{
   width: 30%;
 }
+
 .collapsible {
   background-color: #666666;
   color: white;
